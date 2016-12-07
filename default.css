@@ -1,0 +1,137 @@
+/*
+値
+- px, em, %, rem
+
+色
+- rgba
+	- Red
+	- Green
+	- Blue
+	- Alpha (0-1)
+- hsl / hsla
+	- Hue 0-360
+	- Saturation 0-100%
+	- Lightness 0-100%
+	- Alpha (0-1)
+
+透明
+
+属性セレクタ
+- 
+- a[href]
+- a[href="foo"]
+- a[href~="foo"]
+
+- a[href^="foo"] fooからはじまる
+- a[href$="foo"] fooで終わる
+- a[href*="foo"] fooを含む
+
+擬似クラス
+- :first-child
+- 
+*/
+
+/* 値 */
+html {
+	font-size: 32px;
+}
+
+h1 { 
+	/* font-size: 2em; */
+	/* 64px */
+	font-size: 2rem;
+	/* 64px*/
+}
+
+span {
+	/* font-size: 0.5rem; */
+	/* 32px */
+	font-size: 0.5rem;
+	/* 16px */
+}
+
+div {
+	width: 100px;
+	height: 50px;
+}
+/* 色 */
+#box1 {
+	background: rgb(255, 100, 100);
+}
+
+#box2 {
+	background: rgba(255, 100, 100, .2);
+}
+
+#box3 {
+	background: hsla(210, 100%, 50%, .7);
+}
+
+#box4 {
+	background: hsla(210, 100%, 40%, .7);
+}
+
+/* 透明 */
+body {
+	background: skyblue;
+}
+
+img {
+	border: 7px solid blue;
+	opacity: 0.3;
+}
+
+/* 属性セレクタ */
+
+/* a[href^="http"] { color: orange; } */
+
+a[href$=".com"] { color: red; }
+
+/* a[href^="http"] { color: blue; } */
+
+/* 擬似クラス */
+
+/*li:last-child*/
+/*li:nth-child(3)*/
+/*li:nth-child(odd)*/
+/*li:nth-child(even)*/
+/*li:nth-child(3n+1)*/
+/*li:nth-last-child(4)*/ 
+/*p:only-child*/
+/*p:first-of-type*/
+/*p:last-of-type*/
+/*p:nth-of-type(3)*/
+/*p:nth-last-of-type(4)*/
+/*h2:only-of-type*/
+/*not(.target)*/
+/*li:empty*/
+/*input[type="text"]:enabled*/
+/*input[type="text"]:disabled*/
+/*input[type="checbox"]:checked + label*/ {
+	background: violet;
+}
+
+/* 角丸 */
+div {
+	width: 200px;
+	height: 200px;
+	background: skyblue;
+	/*border-radius: 30px / 15px;*/
+	/*border-bottom-right-radius: 30px;*/
+	/*border-radius: 10px 20px 30px;*/
+	border-radius: 50%;
+}
+
+/* 背景 */
+body { margin: 0; }
+
+header {
+	width: 100%;
+	height: 130px;
+	background: url('../../Desktop/WebExtention/image/kankore.jpg');
+	no-repeat skyblue;
+	/*background: 50% 100%;*/
+	/*background: cover;*/
+	/*background: contain;*/
+	background-position: 50% 50%;
+}
