@@ -1,0 +1,22 @@
+html {
+	font-size: 32px;
+}
+
+h1 { 
+	/* font-size: 2em; */
+	/* 64px */
+	font-size: 2rem;
+	/* 64px*/
+}
+
+span {
+	/* font-size: 0.5rem; */
+	/* 32px */
+	font-size: 0.5rem;
+	/* 16px */
+}
+
+div {
+	width: 100px;
+	height: 50px;
+}

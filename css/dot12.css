@@ -1,0 +1,13 @@
+/* 線形グラデーション */
+
+div {
+	width: 200px;
+	height: 200px;
+	background-image:
+	/*radial-gradient(skyblue, blue);*/
+	/*radial-gradient(at 30px 40px, skyblue, blue);*/
+	/*radial-gradient(ellipse 20px 30px at 30px 40px, skyblue, blue);*/
+	/*radial-gradient(circle 20px at 30px 40px, skyblue, blue);*/
+	/*radial-gradient(farthest-side at 30px 40px, skyblue, blue);*/
+	repeating-radial-gradient(skyblue, blue 20px);
+}

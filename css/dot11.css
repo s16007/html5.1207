@@ -1,0 +1,13 @@
+/* 線形グラデーション */
+
+div {
+	width: 200px;
+	height: 200px;
+	background-image:
+	/*linear-gradient(skyblue, blue);*/
+	/*linear-gradient(to top left, skyblue, blue);*/
+	/*linear-gradient(45deg, skyblue, blue);*/
+	/*linear-gradient(lightgreen, skyblue, blue);*/
+	/*linear-gradient(lightgreen 10%, skyblue 70%, blue);*/
+	repeating-linear-gradient(lightgreen, skyblue, blue 20px);
+}

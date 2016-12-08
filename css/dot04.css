@@ -1,0 +1,7 @@
+/* 属性セレクタ */
+
+/* a[href^="http"] { color: orange; } */
+
+a[href$=".com"] { color: red; }
+
+/* a[href^="http"] { color: blue; } */
